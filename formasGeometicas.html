@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+n = parseFloat(prompt("Escolha 1 : 1- Quadrado, 2- Triângulo, 3-Circulo"))
+
+switch(n){
+    case 1: 
+        x = parseFloat(prompt("Digite o valor do lado :"));
+        r = x*x  
+        document.write("O calculo do quadrado é : "+ r);
+break;
+
+case 2:
+b =parseFloat(prompt("Digite o valor da Base "));
+a =parseFloat(prompt("Digite o valorde altura"))
+r = b * a 
+document.write("O calculo do Triângulo é " + r)
+break;
+
+case 3:
+ra = parseFloat(prompt("digite o valor do raio: "))
+r = Math.PI*(ra*ra)
+document.write("O calculo do circulo é " + r.toFixed(2))
+break;
+}
+</script>
+</body>
+</html>
